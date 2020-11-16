@@ -1,0 +1,40 @@
+@media screen and (min-width: 1280px) {
+    //General styling
+    body {
+        padding: unset;
+    }
+    //Paragraph part
+    .paragraph {
+        padding: 5% 10%;
+        margin-bottom: unset;
+    }
+    p#p-2 {
+        width: 40%;
+        margin: 0 30%;
+    }
+    //Cards styling
+    .cards-section {
+        display: grid;
+        grid-template-columns: 1fr 335px 30px 335px 30px 335px 1fr;
+        grid-template-areas: ". grid1 . grid2 . grid3 .";
+        justify-items: center;
+        align-items: center;
+        .cards {
+            height: 193px;
+            width: 335px;
+        }
+        .card-group{
+            display: box;
+            grid-area: grid2;
+            .card2 {
+                margin-bottom: 30px;
+            }
+        }
+        .card1 {
+            grid-area: grid1;
+        }
+        .card4 {
+            grid-area: grid3;
+        }
+    }
+}

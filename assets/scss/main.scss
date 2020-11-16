@@ -1,3 +1,84 @@
 @import 'config';
-
+@import 'config';
+//General styling
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $light-gray-color;
+    padding: 20% 8%;
+}
+main {
+    font-family: $font-stack;
+    font-size: 15px;
+    h1, p#p-1, h2.card-header {
+        color: $dark-blue-color;
+    }
+    p#p-2, p.card-paragraph {
+        color: $grayish-blue-color;
+    }
+}
+//Paragraph part
+.paragraph {
+    text-align: center;
+    margin-bottom: 70px;
+    h1, p#p-1 {
+        font-size: 25px;
+    }
+    h1 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    p#p-1 {
+        font-weight: 200;
+    }
+}
+//Cards styling
+.cards {
+    margin-bottom: 25px;
+    box-shadow: $shade-value; 
+    .cards-content {
+        padding: 6.5% 8% 8%;
+        background-color: #ffffff;
+    }
+    //Colored area
+    .colored-area {
+        height: 3px;
+        width: 100%;
+    }
+    &.card1 > .colored-area {
+        background-color: $cyan-color;
+    }
+    &.card2 > .colored-area {
+        background-color: $red-color;
+    }
+    &.card3 > .colored-area {
+        background-color: $orange-color;
+    }
+    &.card4 > .colored-area {
+        background-color: $blue-color; 
+    }
+    //Cards content
+    .cards-content {
+        height: 100%;
+    }
+    h2.card-header {
+        font-size: 18.5px;
+    }
+    p.card-paragraph {
+        font-size: 13px;
+    }
+    .icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        img {
+            width: 48px;
+            height: 48px;
+        } 
+    }
+}
 @import 'responsive';
