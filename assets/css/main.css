@@ -106,7 +106,6 @@ main p#p-2, main p.card-paragraph {
     width: 335px;
   }
   .cards-section .card-group {
-    display: box;
     grid-area: grid2;
   }
   .cards-section .card-group .card2 {
